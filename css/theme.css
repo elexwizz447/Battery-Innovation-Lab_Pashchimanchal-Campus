@@ -1,15 +1,4 @@
-/* Green Theme for Battery Innovation Lab - Complete CSS */
-
-/* ============================================
-   GREEN COLOR PALETTE
-   ============================================ */
-:root {
-    --primary-green: #2d5016;
-    --secondary-green: #4a7c2c;
-    --light-green: #6b9d3e;
-    --accent-green: #88c057;
-    --dark-green: #1a3309;
-}
+/* Battery Innovation Lab Theme - Subtle Green Accents */
 
 /* ============================================
    BASE STYLES
@@ -32,17 +21,16 @@ body {
 
 .container>hr {
 	margin: 20px 0;
-	border-top: 2px solid var(--light-green);
 }
 
 /* ============================================
-   NAVIGATION BAR - GREEN THEME
+   NAVIGATION BAR - Subtle Green
    ============================================ */
 .navbar .navbar-inner {
 	padding: 0;
-	background: var(--primary-green);
-	background-image: linear-gradient(to bottom, var(--secondary-green), var(--primary-green));
-	border: 1px solid var(--dark-green);
+	background: #2d5016;
+	background-image: linear-gradient(to bottom, #3a6b1f, #2d5016);
+	border: 1px solid #1a3309;
 	border-radius: 4px;
 }
 
@@ -69,14 +57,14 @@ body {
 
 .navbar .nav li a:hover,
 .navbar .nav li a:focus {
-	background-color: var(--light-green);
+	background-color: #4a7c2c;
 	color: #ffffff;
 }
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-	background-color: var(--accent-green);
+	background-color: #5a8c3c;
 	color: #ffffff;
 	box-shadow: inset 0 3px 8px rgba(0,0,0,0.2);
 }
@@ -101,7 +89,7 @@ body>.navbar .brand {
 	margin-left: 20px;
 	float: right;
 	font-weight: bold;
-	color: var(--primary-green);
+	color: #000;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
@@ -110,7 +98,6 @@ body>.navbar .brand {
 
 body>.navbar .brand:hover {
 	text-decoration: none;
-	color: var(--accent-green);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .4);
 }
 
@@ -142,7 +129,6 @@ body>.navbar .brand:hover {
 	margin: 0 0 -1px;
 	padding: 8px 14px;
 	border: 1px solid #e5e5e5;
-	color: var(--secondary-green);
 }
 
 .bs-docs-sidenav>li>a.subhead {
@@ -171,8 +157,6 @@ body>.navbar .brand:hover {
 	z-index: 2;
 	padding: 9px 15px;
 	border: 0;
-	background-color: var(--secondary-green);
-	color: #ffffff;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
 	-webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
 	-moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
@@ -180,8 +164,7 @@ body>.navbar .brand:hover {
 }
 
 .bs-docs-sidenav>li>a:hover {
-	background-color: #f5f5f5;
-	color: var(--accent-green);
+	background-color: #f5f5f5
 }
 
 .bs-docs-sidenav a:hover .icon-chevron-right {
@@ -245,7 +228,7 @@ body>.navbar .brand:hover {
 }
 
 #media .post_row .post .img .date {
-	background: var(--secondary-green);
+	background: #E8554E;
 	position: absolute;
 	padding: 2px 5px;
 	top: 0;
@@ -263,8 +246,9 @@ body>.navbar .brand:hover {
 #media .post_row .post .img img {
 	height: 275px;
 	width: 410px;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center;
+	background-color: #f8f9fa;
 }
 
 #media .post_row .post .text {
@@ -337,7 +321,7 @@ body>.navbar .brand:hover {
 }
 
 #media .post_row .post a.plus_wrapper span {
-	color: var(--secondary-green);
+	color: #1189D9;
 	font-size: 30px;
 	font-weight: bold;
 }
@@ -347,11 +331,11 @@ body>.navbar .brand:hover {
 }
 
 #media .post_row .post:hover {
-	box-shadow: 0px 1px 5px 1px rgba(45, 80, 22, 0.3);
+	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216)
 }
 
 #media .post_row .post:hover .text h5 a {
-	color: var(--secondary-green);
+	color: #1189D9
 }
 
 /* ============================================
@@ -388,18 +372,13 @@ body>.navbar .brand:hover {
 	font-weight: 100;
 	margin-bottom: 25px;
 	line-height: 55px;
-	color: var(--primary-green);
 }
 
 /* ============================================
-   FEATURE ITEMS (NEWS CARDS)
+   FEATURE ITEMS (NEWS CARDS) - FULL IMAGE FIT
    ============================================ */
-.feature-item {
-	margin-bottom: 30px;
-}
-
 .feature-item:hover {
-	box-shadow: 0px 1px 5px 1px rgba(45, 80, 22, 0.3);
+	box-shadow: 0px 1px 5px 1px rgb(216, 216, 216)
 }
 
 .feature-item img {
@@ -408,14 +387,9 @@ body>.navbar .brand:hover {
 	max-width: 90%;
 	height: 250px;
 	width: 90%;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center;
-	border-radius: 6px;
-	transition: transform 0.3s ease;
-}
-
-.feature-item img:hover {
-	transform: scale(1.02);
+	background-color: #f8f9fa;
 }
 
 .feature-item h5 {
@@ -423,7 +397,6 @@ body>.navbar .brand:hover {
 	margin-right: 15px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: var(--secondary-green);
 }
 
 .feature-item p {
@@ -438,14 +411,8 @@ body>.navbar .brand:hover {
 	margin-right: 15px;
 }
 
-.feature-heading a {
-	color: var(--primary-green);
-	font-weight: 600;
-}
-
 .feature-heading a:hover {
 	text-decoration: none;
-	color: var(--accent-green);
 }
 
 .feature-button {
@@ -453,14 +420,6 @@ body>.navbar .brand:hover {
 	background-image: none;
 	box-shadow: none;
 	margin-bottom: 10px;
-	background-color: var(--secondary-green);
-	border-color: var(--primary-green);
-	color: #ffffff;
-}
-
-.feature-button:hover {
-	background-color: var(--accent-green);
-	border-color: var(--secondary-green);
 }
 
 /* ============================================
@@ -472,11 +431,11 @@ body>.navbar .brand:hover {
 
 .subhead {
 	text-align: left;
-	border-bottom: 2px solid var(--light-green);
+	border-bottom: 1px solid #ddd;
 }
 
 /* ============================================
-   JUMBOTRON - GREEN THEME
+   JUMBOTRON - Subtle Green Header
    ============================================ */
 .jumbotron {
 	position: relative;
@@ -484,17 +443,16 @@ body>.navbar .brand:hover {
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-	background: var(--primary-green);
-	background: -moz-linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, var(--primary-green)), color-stop(100%, var(--secondary-green)));
-	background: -webkit-linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-	background: -o-linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-	background: -ms-linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-	background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%) repeat;
+	background: #2d5016;
+	background: -moz-linear-gradient(45deg, #2d5016 0%, #1a3309 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #2d5016), color-stop(100%, #1a3309));
+	background: -webkit-linear-gradient(45deg, #2d5016 0%, #1a3309 100%);
+	background: -o-linear-gradient(45deg, #2d5016 0%, #1a3309 100%);
+	background: -ms-linear-gradient(45deg, #2d5016 0%, #1a3309 100%);
+	background: linear-gradient(45deg, #2d5016 0%, #1a3309 100%) repeat;
 	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 	-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-	border-radius: 6px;
 }
 
 .jumbotron:after {
@@ -508,22 +466,15 @@ body>.navbar .brand:hover {
 	opacity: .4;
 }
 
-.jumbotron h1 {
-	font-weight: bold;
-	margin-bottom: 10px;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
 .lead {
 	margin-bottom: 0px;
 	font-size: 21px;
 	font-weight: 200;
 	line-height: 15px;
-	opacity: 0.9;
 }
 
 /* ============================================
-   IMAGES
+   IMAGES - FULL IMAGE FIT (NO CROPPING)
    ============================================ */
 img.float-left {
 	float: left;
@@ -544,12 +495,13 @@ img.float-right {
 img.publications-thumb {
 	width: 142px;
 	height: 188px;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center;
+	background-color: #f8f9fa;
 }
 
 /* ============================================
-   CAROUSEL - FIXED DIMENSIONS
+   CAROUSEL - FULL IMAGE FIT (NO CROPPING)
    ============================================ */
 .carousel {
 	margin-bottom: 20px;
@@ -561,27 +513,23 @@ img.publications-thumb {
 img.carousel-image {
 	width: 100%;
 	height: 500px;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: center;
+	background-color: #000000;
 }
 
 .carousel-caption {
-	background-color: rgba(45, 80, 22, 0.85);
+	background-color: rgba(0, 0, 0, 0.7);
 	padding: 15px;
 	border-radius: 4px;
 }
 
-.carousel-caption h4 {
-	color: #ffffff;
-	font-weight: bold;
-}
-
 .carousel-control {
-	background-color: rgba(45, 80, 22, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-control:hover {
-	background-color: rgba(45, 80, 22, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ============================================
@@ -642,17 +590,8 @@ li.publication {
 	margin-bottom: 20px;
 }
 
-.page-header h3 {
-	color: var(--primary-green);
-}
-
-.page-header h3 a {
-	color: var(--primary-green);
-}
-
 .page-header h3 a:hover {
 	text-decoration: none;
-	color: var(--accent-green);
 }
 
 /* ============================================
@@ -670,117 +609,46 @@ iframe.map-frame {
 }
 
 /* ============================================
-   LINKS - GREEN THEME
-   ============================================ */
-a {
-	color: var(--secondary-green);
-	transition: color 0.3s ease;
-}
-
-a:hover {
-	color: var(--accent-green);
-	text-decoration: none;
-}
-
-/* ============================================
-   HEADINGS - GREEN THEME
-   ============================================ */
-h1, h2, h3, h4, h5, h6 {
-	color: var(--primary-green);
-}
-
-h2.centered {
-	text-align: center;
-	font-weight: bold;
-	margin: 20px 0;
-}
-
-/* ============================================
-   DATE STYLING
-   ============================================ */
-.date {
-	color: var(--secondary-green);
-	font-weight: bold;
-	font-style: italic;
-}
-
-/* ============================================
-   HORIZONTAL RULES
-   ============================================ */
-hr {
-	border-top: 2px solid var(--light-green);
-	margin: 30px 0;
-}
-
-/* ============================================
-   FOOTER - GREEN THEME
+   FOOTER - Subtle Green Accent
    ============================================ */
 #footer {
 	z-index: 10;
 	margin-top: 50px;
 	margin-bottom: 0px;
 	padding-bottom: 25px;
-	padding-top: 40px;
 	border-top-width: 8px;
 	border-top-style: solid;
-	border-top-color: var(--primary-green);
-	background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 100%);
+	border-top-color: #2d5016;
+	background-color: #000000;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 	text-align: center;
-	color: #ffffff;
 }
 
 #footer h3 {
 	font-size: 19px;
 	text-transform: uppercase;
-	color: var(--accent-green);
+	font-family: BebasNeueRegular;
+	color: #8DBECE;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: var(--light-green);
+	border-bottom-color: #30393C;
 	line-height: 35px;
 	margin-bottom: 20px;
 	margin-top: 25px;
-	font-weight: bold;
-}
-
-#footer a {
-	color: var(--accent-green);
-}
-
-#footer a:hover {
-	color: #ffffff;
+	font-weight: normal;
 }
 
 #footer a img {
 	margin-top: 40px;
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(255,255,255,0.1);
 }
 
 #footer p,
 #footer address {
-	color: #d0d0d0;
+	color: #8F8F8F;
 	font-size: 11px;
-	line-height: 1.8;
-}
-
-/* ============================================
-   BUTTONS
-   ============================================ */
-.btn-primary {
-	background-color: var(--secondary-green);
-	border-color: var(--primary-green);
-	color: #ffffff;
-}
-
-.btn-primary:hover {
-	background-color: var(--accent-green);
-	border-color: var(--secondary-green);
 }
 
 /* ============================================
@@ -793,14 +661,6 @@ hr {
 	
 	.feature-item img {
 		height: 200px;
-	}
-	
-	.jumbotron {
-		padding: 20px 0;
-	}
-	
-	.jumbotron h1 {
-		font-size: 28px;
 	}
 }
 
