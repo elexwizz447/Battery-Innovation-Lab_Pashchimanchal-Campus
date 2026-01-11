@@ -391,19 +391,20 @@ body>.navbar .brand:hover {
 	border-bottom: 1px solid #ddd;
 }
 
+/* GREEN THEMED HEADER - Changed from black to light green */
 .jumbotron {
 	position: relative;
 	padding: 45px 0px 35px 0px;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-	background: #30393C;
-	background: -moz-linear-gradient(45deg, #30393C 0%, #000000 100%);
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #30393C), color-stop(100%, #30393C));
-	background: -webkit-linear-gradient(45deg, #30393C 0%, #000000 100%);
-	background: -o-linear-gradient(45deg, #30393C 0%, #000000 100%);
-	background: -ms-linear-gradient(45deg, #30393C 0%, #000000 100%);
-	background: linear-gradient(45deg, #30393C 0%, #000000 100%) repeat;
+	background: #2d5016;
+	background: -moz-linear-gradient(45deg, #4a7c2c 0%, #2d5016 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #4a7c2c), color-stop(100%, #2d5016));
+	background: -webkit-linear-gradient(45deg, #4a7c2c 0%, #2d5016 100%);
+	background: -o-linear-gradient(45deg, #4a7c2c 0%, #2d5016 100%);
+	background: -ms-linear-gradient(45deg, #4a7c2c 0%, #2d5016 100%);
+	background: linear-gradient(45deg, #4a7c2c 0%, #2d5016 100%) repeat;
 	-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 	-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 	box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
@@ -511,6 +512,7 @@ ul.sponsors {
 	margin-bottom: 40px;
 }
 
+/* GREEN THEMED FOOTER - Changed from black to light green */
 #footer {
 	z-index: 10;
 	margin-top: 50px;
@@ -518,8 +520,8 @@ ul.sponsors {
 	padding-bottom: 25px;
 	border-top-width: 8px;
 	border-top-style: solid;
-	border-top-color: #2F2F2F;
-	background-color: #000000;
+	border-top-color: #4a7c2c;
+	background-color: #2d5016;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -531,10 +533,10 @@ ul.sponsors {
 	font-size: 19px;
 	text-transform: uppercase;
 	font-family: BebasNeueRegular;
-	color: #8DBECE;
+	color: #a8d88e;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #30393C;
+	border-bottom-color: #4a7c2c;
 	line-height: 35px;
 	margin-bottom: 20px;
 	margin-top: 25px;
@@ -547,6 +549,31 @@ ul.sponsors {
 
 #footer p,
 #footer address {
-	color: #8F8F8F;
+	color: #c5e6b3;
 	font-size: 11px;
+}
+
+/* DOUBLE SIZE IMAGES FOR LAB COORDINATORS AND INTERN RESEARCH ASSISTANTS ONLY */
+#labcoordinators .thumbnail img,
+#researchassistants .thumbnail img {
+	width: 200px !important;
+	height: auto !important;
+	max-width: 200px !important;
+}
+
+#labcoordinators .thumbnail,
+#researchassistants .thumbnail {
+	width: 200px !important;
+	display: inline-block;
+}
+
+/* Keep Representatives section images at normal size */
+#representatives .thumbnail img {
+	width: 100px;
+	height: auto;
+}
+
+#representatives .thumbnail {
+	width: 100px;
+	display: inline-block;
 }
