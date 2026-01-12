@@ -553,27 +553,33 @@ ul.sponsors {
 	font-size: 11px;
 }
 
-/* DOUBLE SIZE IMAGES FOR LAB COORDINATORS AND INTERN RESEARCH ASSISTANTS ONLY */
+/* DOUBLE SIZE IMAGES FOR LAB COORDINATORS, INTERN RESEARCH ASSISTANTS, AND REPRESENTATIVES */
 #labcoordinators .thumbnail img,
-#researchassistants .thumbnail img {
+#researchassistants .thumbnail img,
+#representatives .thumbnail img {
 	width: 200px !important;
 	height: auto !important;
 	max-width: 200px !important;
 }
 
 #labcoordinators .thumbnail,
-#researchassistants .thumbnail {
+#researchassistants .thumbnail,
+#representatives .thumbnail {
 	width: 200px !important;
 	display: inline-block;
 }
 
-/* Keep Representatives section images at normal size */
-#representatives .thumbnail img {
-	width: 100px;
-	height: auto;
+/* Adjust text spacing for larger images in all sections */
+#labcoordinators .span3,
+#researchassistants .span3,
+#representatives .span3 {
+	width: 25% !important;
+	margin-right: 2%;
 }
 
-#representatives .thumbnail {
-	width: 100px;
-	display: inline-block;
+#labcoordinators .span9,
+#researchassistants .span9,
+#representatives .span9 {
+	width: 70% !important;
+	margin-left: 3%;
 }
